@@ -12,7 +12,7 @@
 cd ~/.config/nvim
 nvim .
 ```
-###2. Create the options.lua File
+### 2. Create the options.lua File
 #Navigate to the lua/josean/core folder (create it if it doesn’t exist), then press % in Neovim to create a new file called options.lua.
 
 #In this file, add the following command to modify the Netrw explorer list style:
@@ -21,20 +21,20 @@ nvim .
 ```lua
 vim.cmd("let g:netrw_liststyle = 3")
 ```
-###3. Load Core Options on Startup
+### 3. Load Core Options on Startup
 #Open the main init.lua file using :Explore or navigate manually, and add the following line to load the core options at startup:
 
 ```lua
 require("josean.core.options")
 ```
-###4. Reopen Neovim
+### 4. Reopen Neovim
 #Save your changes with :w and reopen Neovim:
 
 
 ```bash
 nvim .
 ```
-###5. Add Additional Core Options
+### 5. Add Additional Core Options
 #Go back to options.lua and add the following configurations to set up various core options:
 
 
@@ -79,14 +79,14 @@ opt.splitbelow = true -- horizontal split to the bottom
 -- Disable swapfile
 opt.swapfile = false
 ```
-###6. Update init.lua
+### 6. Update init.lua
 
 #Edit lua/josean/core/init.lua to include:
 
 ```lua
 require("josean.core.options")
 ```
-###7. Final Adjustment to init.lua
+### 7. Final Adjustment to init.lua
 
 #Open the init.lua file and modify the require statement as follows:
 
